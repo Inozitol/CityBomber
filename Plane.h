@@ -11,14 +11,16 @@
 class Plane {
 public:
     Plane();
-    sf::FloatRect getPosition();
-    void lowerHeight();
-    void dropBomb(){};
+    sf::Vector2f getPosition();
     void movePlane();
     sf::Sprite getSprite();
     void update();
+    void setSpriteTexture(sf::Texture&);
+    void textureAnimation();
+    bool planeDirec=false;
 
 private:
+    void _lowerHeight();
     sf::Vector2f _position;
     sf::RectangleShape _rectangle;
     sf::Sprite _sprite;
@@ -26,6 +28,8 @@ private:
     sf::Clock _clock;
     sf::Time _time;
     int _heightCounter;
+    int _animationCounter;
+    bool _direction;
 };
 
 

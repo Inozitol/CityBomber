@@ -6,37 +6,30 @@
 
 Plane::Plane(){
 
-    _position.x = 0;
+    _position.x = -125;
     _position.y = 25;
     _heightCounter = 0;
-    _rectangle.setScale(3.5,3.5);
-    _sprite.setScale(3.5,3.5);
-    _rectangle.setSize(sf::Vector2f(28,12));
-
-    //Plane texture
-    sf::Texture planeTexture;
-    if(!planeTexture.loadFromFile("plane_spritesheet.png")){
-        std::cout << "Error while loading texture file.";
-    }
-    _sprite.setTextureRect(sf::IntRect(0, 0, 28, 12));
-    _sprite.setTexture(planeTexture);
-    //
+    _rectangle.setScale(4,4);
+    _sprite.setScale(4,4);
+    _rectangle.setSize(sf::Vector2f(29,12));
+    _animationCounter = 0;
+    _direction = true;
 }
 
-sf::FloatRect Plane::getPosition() {
-    return _rectangle.getGlobalBounds();
+sf::Vector2f Plane::getPosition() {
+    return _rectangle.getPosition();
 }
 
-void Plane::lowerHeight() {
-    _position.y -= 10;
+void Plane::_lowerHeight() {
+    _position.y += 35;
 }
 
 void Plane::movePlane() {
-    if(_heightCounter % 2 == 0){
-        _position.x += 1.8;
+    if(_direction == true){
+        _position.x += 3;
     }
     else{
-        _position.x -= 1.8;
+        _position.x -= 3;
     }
 }
 
@@ -47,4 +40,42 @@ sf::Sprite Plane::getSprite() {
 void Plane::update() {
     _rectangle.setPosition(_position);
     _sprite.setPosition(_position);
+}
+
+void Plane::setSpriteTexture(sf::Texture &texture) {
+    //Plane texture
+    _sprite.setTexture(texture);
+    _sprite.setTextureRect(sf::IntRect(0, 1, 29, 12));
+    //
+}
+
+void Plane::textureAnimation() {
+    _time = _clock.getElapsedTime();
+
+    if(_direction) {
+        _sprite.setTextureRect(sf::IntRect((_animationCounter * 29), 1, 29, 12));
+    }
+    else{
+        _sprite.setTextureRect(sf::IntRect((_animationCounter * 29), 14, 29, 12));
+    }
+
+    if(_time.asMilliseconds() >= 100){
+        _animationCounter++;
+        if(_animationCounter >= 4){
+            _animationCounter = 0;
+        }
+        _clock.restart();
+    }
+    if(_position.x > 1340){
+        Plane::_lowerHeight();
+        _position.x = 1300;
+        _direction = false;
+        planeDirec=true;
+    }
+    if(_position.x < -150){
+        Plane::_lowerHeight();
+        _position.x = -100;
+        _direction = true;
+        planeDirec=false;
+    }
 }
