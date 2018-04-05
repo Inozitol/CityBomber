@@ -1,0 +1,19 @@
+C:\Users\Gandalf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\181.4203.505\bin\cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" O:\Projekty\CityBomber
+-- The C compiler identification is GNU 7.2.0
+-- The CXX compiler identification is GNU 7.2.0
+-- Check for working C compiler: C:/MinGW-W64/mingw32/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW-W64/mingw32/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/MinGW-W64/mingw32/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW-W64/mingw32/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found SFML 2.4.2 in O:/Libraries/SFML-2.4.2/install/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: O:/Projekty/CityBomber/cmake-build-debug

@@ -1,0 +1,3 @@
+C:\Users\Gandalf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\181.4203.505\bin\cmake\bin\cmake.exe -E remove -f CMakeFiles\CityBomber.dir/objects.a
+C:\MinGW-W64\mingw32\bin\ar.exe cr CMakeFiles\CityBomber.dir/objects.a @CMakeFiles\CityBomber.dir\objects1.rsp
+C:\MinGW-W64\mingw32\bin\g++.exe  -std=c++14 -static -g   -Wl,--whole-archive CMakeFiles\CityBomber.dir/objects.a -Wl,--no-whole-archive  -o CityBomber.exe -Wl,--out-implib,libCityBomber.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CityBomber.dir\linklibs.rsp
