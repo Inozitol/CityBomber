@@ -1,10 +1,17 @@
+//Gandalf made...only god and I understand this, but not for long. Soon only god will understand this piece of sh*t
+//I know..."Sooo easy piece of code, I could write this in my sleep". To those people I say only one thing: Please, stay in your evil lair full of disappointment
+
 #include "Plane.h"
 #include "Bomb.h"
+#include "Building.h"
+#include <cstdlib>
 
 sf::Clock globClock;
 sf::Time globTime;
 
 class const_iterator;
+
+int bombArrCounter;
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(1280, 800), "CityBomber");
@@ -28,7 +35,7 @@ int main() {
     //
 
     //Bomb vector array
-    std::vector<Bomb>::const_iterator iter;
+    std::vector<Bomb>::const_iterator iterBomb;
     std::vector<Bomb> bombArray;
 
     class Bomb bomb;
@@ -41,6 +48,20 @@ int main() {
     }
     bomb.setSpriteTexture(bombTexture);
     //
+
+    //Building vector array
+    std::vector<Building>::const_iterator iterBuilding;
+    std::vector<Building> buildingArray;
+
+    class Building building;
+    //
+
+    sf::Texture buildingTexture;
+    if(!buildingTexture.loadFromFile("building.png")){
+        std::cout << "Error while loading texture file.";
+    }
+
+    building.builder(building, buildingArray, buildingTexture);
 
     while(window.isOpen()){
 
@@ -60,20 +81,26 @@ int main() {
             bombArray.push_back(bomb);
             globClock.restart();
         }
-
-
         plane.update();
         plane.movePlane();
         plane.textureAnimation();
 
         window.clear();
         window.draw(backgroundSprite);
-        int bombArrCounter = 0;
-        for(iter = bombArray.begin(); iter != bombArray.end(); iter++){
+        bombArrCounter = 0;
+        for(iterBomb = bombArray.begin(); iterBomb != bombArray.end(); iterBomb++) {
             window.draw(bombArray[bombArrCounter].getSprite());
             bombArray[bombArrCounter].decreaseHight();
+            if(bombArray[bombArrCounter].getPosition().y > 700){
+                bombArray.erase(bombArray.begin()+(bombArrCounter-1));
+            }
             bombArray[bombArrCounter].update();
             bombArrCounter++;
+        }
+        int buildingArrCounter = 0;
+        for(iterBuilding = buildingArray.begin(); iterBuilding != buildingArray.end(); iterBuilding++) {
+            window.draw(buildingArray[buildingArrCounter].getSprite());
+            buildingArrCounter++;
         }
         window.draw(plane.getSprite());
         window.display();

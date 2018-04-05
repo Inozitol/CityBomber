@@ -17,6 +17,7 @@ public:
     void setTextureRect(bool);
     void decreaseHight();
     void update();
+    sf::Vector2f getPosition();
 
 private:
     float _fallSpeed;

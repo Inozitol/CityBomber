@@ -45,3 +45,7 @@ void Bomb::update() {
     _rectangle.setPosition(_position);
     _sprite.setPosition(_position);
 }
+
+sf::Vector2f Bomb::getPosition() {
+    return _position;
+}
