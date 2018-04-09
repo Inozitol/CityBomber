@@ -49,3 +49,7 @@ void Bomb::update() {
 sf::Vector2f Bomb::getPosition() {
     return _position;
 }
+
+sf::FloatRect Bomb::getRect() {
+    return _sprite.getGlobalBounds();
+}

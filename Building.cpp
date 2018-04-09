@@ -29,14 +29,35 @@ void Building::builder(Building build, std::vector<Building> &buildArr, sf::Text
     sf::Vector2f startPos;
     startPos.y = 780;
     for(int x=0;x<11;x++){
-        startPos.x = (29*_SCALE)*x;
-        buildNum=rand() % 4 + 3;
-        for(int y = 0; y<buildNum; y++){
-            startPos.y -= 20*_SCALE;
-            build.setPosition(startPos);
-            build.setSpriteTexture(buildingTexture);
-            buildArr.push_back(build);
+        if(x!=1 || x!=10) {
+            startPos.x = (29 * _SCALE) * x;
+            buildNum = rand() % 4 + 3;
+            for (int y = 0; y < buildNum; y++) {
+                startPos.y -= 20 * _SCALE;
+                build.setPosition(startPos);
+                build.setSpriteTexture(buildingTexture);
+                buildArr.push_back(build);
+            }
+            startPos.y = 780;
         }
-        startPos.y = 780;
+    }
+}
+
+sf::FloatRect Building::getRect() {
+    return _sprite.getGlobalBounds();
+}
+
+bool Building::collision(sf::FloatRect bombRect, std::vector<Building> &buildArr, std::vector<Building>::iterator &iterBuilding) {
+    int buildingArrCounter = 0;
+
+    for(iterBuilding = buildArr.begin(); iterBuilding != buildArr.end();) {
+        if (bombRect.intersects(buildArr[buildingArrCounter].getRect())){
+            iterBuilding = buildArr.erase(iterBuilding);
+            return true;
+        }
+        else {
+            buildingArrCounter++;
+            iterBuilding++;
+        }
     }
 }

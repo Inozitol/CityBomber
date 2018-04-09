@@ -18,6 +18,7 @@ public:
     void decreaseHight();
     void update();
     sf::Vector2f getPosition();
+    sf::FloatRect getRect();
 
 private:
     float _fallSpeed;

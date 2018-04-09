@@ -35,7 +35,7 @@ int main() {
     //
 
     //Bomb vector array
-    std::vector<Bomb>::const_iterator iterBomb;
+    std::vector<Bomb>::iterator iterBomb;
     std::vector<Bomb> bombArray;
 
     class Bomb bomb;
@@ -50,7 +50,7 @@ int main() {
     //
 
     //Building vector array
-    std::vector<Building>::const_iterator iterBuilding;
+    std::vector<Building>::iterator iterBuilding;
     std::vector<Building> buildingArray;
 
     class Building building;
@@ -88,14 +88,19 @@ int main() {
         window.clear();
         window.draw(backgroundSprite);
         bombArrCounter = 0;
-        for(iterBomb = bombArray.begin(); iterBomb != bombArray.end(); iterBomb++) {
-            window.draw(bombArray[bombArrCounter].getSprite());
-            bombArray[bombArrCounter].decreaseHight();
-            if(bombArray[bombArrCounter].getPosition().y > 700){
-                bombArray.erase(bombArray.begin()+(bombArrCounter-1));
+        for(iterBomb = bombArray.begin(); iterBomb != bombArray.end();) {
+            if(bombArray[bombArrCounter].getPosition().y > 790 || building.collision(bombArray[bombArrCounter].getRect(), buildingArray, iterBuilding) == true){
+                iterBomb = bombArray.erase(iterBomb);
+
             }
-            bombArray[bombArrCounter].update();
-            bombArrCounter++;
+            else {
+                window.draw(bombArray[bombArrCounter].getSprite());
+                bombArray[bombArrCounter].decreaseHight();
+
+                bombArray[bombArrCounter].update();
+                bombArrCounter++;
+                iterBomb++;
+            }
         }
         int buildingArrCounter = 0;
         for(iterBuilding = buildingArray.begin(); iterBuilding != buildingArray.end(); iterBuilding++) {

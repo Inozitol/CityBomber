@@ -15,6 +15,8 @@ public:
     void setSpriteTexture(sf::Texture&);
     void setPosition(sf::Vector2f);
     static void builder(Building,std::vector<Building>&,sf::Texture&);
+    static bool collision(sf::FloatRect, std::vector<Building>&, std::vector<Building>::iterator&);
+    sf::FloatRect getRect();
 
 private:
     sf::Sprite _sprite;
