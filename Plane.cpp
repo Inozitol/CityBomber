@@ -2,18 +2,28 @@
 // Created by Gandalf on 16/Jan/18.
 //
 
+#include <sstream>
 #include "Plane.h"
 
 Plane::Plane(){
 
     _position.x = -125;
     _position.y = 25;
-    _heightCounter = 0;
     _rectangle.setScale(4,4);
     _sprite.setScale(4,4);
     _rectangle.setSize(sf::Vector2f(29,12));
     _animationCounter = 0;
     _direction = true;
+    _ammo = 3;
+    if(!_font.loadFromFile("arial.ttf")){
+        std::cout << "Cannot load font!";
+    }
+    _textAmmo.setFont(_font);
+    std::stringstream stringAmmo;
+    stringAmmo << "Ammo: " << _ammo;
+    _textAmmo.setString(stringAmmo.str());
+    _textAmmo.setPosition(10,10);
+
 }
 
 sf::Vector2f Plane::getPosition() {
@@ -22,6 +32,7 @@ sf::Vector2f Plane::getPosition() {
 
 void Plane::_lowerHeight() {
     _position.y += 35;
+    _ammo = 3;
 }
 
 void Plane::movePlane() {
@@ -78,4 +89,20 @@ void Plane::textureAnimation() {
         _direction = true;
         planeDirec=false;
     }
+}
+
+int Plane::getAmmo() {
+    return _ammo;
+}
+
+void Plane::decreAmmo() {
+    _ammo--;
+}
+
+sf::FloatRect Plane::getRect() {
+    return _sprite.getGlobalBounds();
+}
+
+sf::Text Plane::getText() {
+    return _textAmmo;
 }

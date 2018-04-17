@@ -75,7 +75,8 @@ int main() {
 
         globTime = globClock.getElapsedTime();
 
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && globTime.asSeconds() >= 1){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && globTime.asSeconds() >= 1 && plane.getAmmo()>0){
+            plane.decreAmmo();
             bomb.startPosition(plane.getPosition().x + 40,plane.getPosition().y + 16);
             bomb.setTextureRect(plane.planeDirec);
             bombArray.push_back(bomb);
@@ -91,7 +92,6 @@ int main() {
         for(iterBomb = bombArray.begin(); iterBomb != bombArray.end();) {
             if(bombArray[bombArrCounter].getPosition().y > 790 || building.collision(bombArray[bombArrCounter].getRect(), buildingArray, iterBuilding) == true){
                 iterBomb = bombArray.erase(iterBomb);
-
             }
             else {
                 window.draw(bombArray[bombArrCounter].getSprite());
@@ -108,6 +108,11 @@ int main() {
             buildingArrCounter++;
         }
         window.draw(plane.getSprite());
+        window.draw(plane.getText());
         window.display();
+
+        if(building.collision(plane.getRect(), buildingArray, iterBuilding) == true){
+            break;
+        }
     }
 }

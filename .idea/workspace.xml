@@ -11,15 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e50ab30-dbd6-47a1-a70f-d92253f48c96" name="Default" comment="First upload">
+    <list default="true" id="1e50ab30-dbd6-47a1-a70f-d92253f48c96" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bomb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bomb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bomb.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bomb.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Building.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Building.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Building.h" beforeDir="false" afterPath="$PROJECT_DIR$/Building.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Bomb.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Bomb.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Building.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plane.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plane.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Building.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Building.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Plane.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/Plane.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CityBomber.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CityBomber.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CityBomber.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -33,13 +34,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="CityBomber" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+            <state relative-caret-position="457">
+              <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
               <folding>
                 <element signature="e#279#297#0" expanded="true" />
               </folding>
@@ -47,11 +51,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Building.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Plane.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Plane.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plane.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Plane.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Building.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Building.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="298">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -59,8 +84,8 @@
       <file leaf-file-name="Building.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Building.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="99" lean-forward="true" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+            <state relative-caret-position="256">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -68,8 +93,8 @@
       <file leaf-file-name="Bomb.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bomb.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+            <state relative-caret-position="573">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -101,14 +126,14 @@
       <list>
         <option value="$PROJECT_DIR$/CMake_modules/FindSFML.cmake" />
         <option value="$PROJECT_DIR$/include.h" />
-        <option value="$PROJECT_DIR$/Plane.h" />
-        <option value="$PROJECT_DIR$/Plane.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Bomb.h" />
-        <option value="$PROJECT_DIR$/Building.h" />
         <option value="$PROJECT_DIR$/Bomb.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Building.h" />
         <option value="$PROJECT_DIR$/Building.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Plane.h" />
+        <option value="$PROJECT_DIR$/Plane.cpp" />
       </list>
     </option>
   </component>
@@ -147,7 +172,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BabkaJabka" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
@@ -214,6 +239,9 @@
       <workItem from="1522948334327" duration="4073000" />
       <workItem from="1523205008718" duration="3118000" />
       <workItem from="1523284842690" duration="2224000" />
+      <workItem from="1523287142823" duration="59000" />
+      <workItem from="1523797483881" duration="592000" />
+      <workItem from="1523978701998" duration="3096000" />
     </task>
     <task id="LOCAL-00001" summary="First upload">
       <created>1516115097158</created>
@@ -243,34 +271,62 @@
       <option name="project" value="LOCAL" />
       <updated>1522948988303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First upload">
+      <created>1523287198283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523287198283</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45819000" />
+    <option name="totallyTimeSpent" value="49566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1388889" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864864" visible="true" weight="0.13742071" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49305555" weight="0.1730013" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49305555" weight="0.17297298" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5069444" side_tool="true" weight="0.1730013" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.14941022" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.14864865" />
+      <window_info id="Structure" order="1" sideWeight="0.50135136" side_tool="true" weight="0.13742071" />
       <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Favorites" order="2" sideWeight="0.50135136" side_tool="true" weight="0.13742071" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2555701" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.14941022" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1388889" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2555701" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49305555" weight="0.1730013" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5069444" side_tool="true" weight="0.1730013" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -584,20 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plane.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plane.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/MinGW-W64/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/bits/stl_construct.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -635,32 +677,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bomb.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        <state relative-caret-position="573">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Building.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="99" lean-forward="true" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+        <state relative-caret-position="256">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Building.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="95" column="18" lean-forward="true" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        <state relative-caret-position="457">
+          <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
           <folding>
             <element signature="e#279#297#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Building.cpp">
+    <entry file="file://$PROJECT_DIR$/Plane.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="489">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plane.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

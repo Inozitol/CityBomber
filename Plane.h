@@ -18,6 +18,11 @@ public:
     void setSpriteTexture(sf::Texture&);
     void textureAnimation();
     bool planeDirec=false;
+    int getAmmo();
+    void decreAmmo();
+    sf::FloatRect getRect();
+    void textInit();
+    sf::Text getText();
 
 private:
     void _lowerHeight();
@@ -27,9 +32,10 @@ private:
     int _ammo;
     sf::Clock _clock;
     sf::Time _time;
-    int _heightCounter;
     int _animationCounter;
     bool _direction;
+    sf::Text _textAmmo;
+    sf::Font _font;
 };
 
 

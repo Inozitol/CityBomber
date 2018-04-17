@@ -21,7 +21,7 @@ public:
 private:
     sf::Sprite _sprite;
     sf::RectangleShape _rectangle;
-    static constexpr float _SCALE = 4.0125391849529780564263322884013;
+    static constexpr float _SCALE = 4.0125391849;
 };
 
 
