@@ -8,110 +8,110 @@
 		<Option virtualFolders="CMake Files\;CMake Files\CMake_modules\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="O:/Projekty/CityBomber/cmake-build-debug"/>
+				<Option working_dir="O:/Projekty/CityBomber/CityBomber/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CityBomber">
-				<Option output="O:/Projekty/CityBomber/cmake-build-debug/CityBomber.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="O:/Projekty/CityBomber/cmake-build-debug"/>
+				<Option output="O:/Projekty/CityBomber/CityBomber/cmake-build-debug/CityBomber.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="O:/Projekty/CityBomber/CityBomber/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="O:/Libraries/SFML-2.4.2/install/include"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="O:/Libraries/SFML-2.5.1/mingw-build/build/include"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 CityBomber"/>
-					<CompileFile command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 CityBomber"/>
+					<CompileFile command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CityBomber/fast">
-				<Option output="O:/Projekty/CityBomber/cmake-build-debug/CityBomber.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="O:/Projekty/CityBomber/cmake-build-debug"/>
+				<Option output="O:/Projekty/CityBomber/CityBomber/cmake-build-debug/CityBomber.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="O:/Projekty/CityBomber/CityBomber/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="O:/Libraries/SFML-2.4.2/install/include"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
-					<Add directory="C:/MinGW-W64/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="O:/Libraries/SFML-2.5.1/mingw-build/build/include"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="O:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 CityBomber/fast"/>
-					<CompileFile command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 CityBomber/fast"/>
+					<CompileFile command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="O:/Projekty/CityBomber/cmake-build-debug"/>
+				<Option working_dir="O:/Projekty/CityBomber/CityBomber/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="O:/Projekty/CityBomber/cmake-build-debug"/>
+				<Option working_dir="O:/Projekty/CityBomber/CityBomber/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW-W64/mingw32/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="O:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;O:/Projekty/CityBomber/CityBomber/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="O:/Projekty/CityBomber/Bomb.cpp">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Bomb.cpp">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/Bomb.h">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Bomb.h">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/Building.cpp">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Building.cpp">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/Building.h">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Building.h">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/Plane.cpp">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Plane.cpp">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/Plane.h">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/Plane.h">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/include.h">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/include.h">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/main.cpp">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/main.cpp">
 			<Option target="CityBomber"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/CMakeLists.txt">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="O:/Projekty/CityBomber/CMake_modules/FindSFML.cmake">
+		<Unit filename="O:/Projekty/CityBomber/CityBomber/CMake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\CMake_modules\"/>
 		</Unit>
 	</Project>

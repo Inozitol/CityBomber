@@ -1,19 +1,17 @@
-C:\Users\Gandalf\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\181.4203.505\bin\cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" O:\Projekty\CityBomber
--- The C compiler identification is GNU 7.2.0
--- The CXX compiler identification is GNU 7.2.0
--- Check for working C compiler: C:/MinGW-W64/mingw32/bin/gcc.exe
--- Check for working C compiler: C:/MinGW-W64/mingw32/bin/gcc.exe -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: C:/MinGW-W64/mingw32/bin/g++.exe
--- Check for working CXX compiler: C:/MinGW-W64/mingw32/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found SFML 2.4.2 in O:/Libraries/SFML-2.4.2/install/include
+"C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" O:\Projekty\CityBomber\CityBomber
+CMake Warning (dev) at CMakeLists.txt:22 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable SFML_ROOT is set to:
+
+    O:/Libraries/SFML-2.5.1/mingw-build/build/lib
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found SFML 2.5.1 in O:/Libraries/SFML-2.5.1/mingw-build/build/include
 -- Configuring done
 -- Generating done
--- Build files have been written to: O:/Projekty/CityBomber/cmake-build-debug
+-- Build files have been written to: O:/Projekty/CityBomber/CityBomber/cmake-build-debug

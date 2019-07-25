@@ -14,9 +14,9 @@ else ()
     add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 endif ()
 
-set(SFML_ROOT "O:/Libraries/SFML-2.4.2/install")
+set(SFML_ROOT "O:/Libraries/SFML-2.5.1/mingw-build/build/lib")
 set(SFML_STATIC_LIBRARIES TRUE)
-set(SFML_INCLUDE_DIR "O:/Libraries/SFML-2.4.2/install/include")
+set(SFML_INCLUDE_DIR "O:/Libraries/SFML-2.5.1/mingw-build/build/include")
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 find_package(SFML 2 REQUIRED COMPONENTS audio graphics window system)
